@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - WebBuilder-SectionA-Group6</title>
+    <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@700&family=Domine:wght@700&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,200" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-wrapper">
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="http://www.yyc2yvr.com/hc/images/logo.png" alt="Navigation Logo">
+                </div>
+                <nav class="navigation">
+                    <a href="index.html">Home</a>
+                    <a href="aboutus.html">About Us</a>
+                    <a href="trails.html">Trails</a>
+                    <a href="contactus.html">Contact Us</a>
+                </nav>
+                <div class="auth-search">
+                    <div class="auth">
+                        <a href="http://eepurl.com/iWwpmg">Sign Up</a>
+                        <a href="#">Sign In</a>
+                    </div>
+                    <div class="search">
+                        <label>
+                            <p hidden>Search</p>
+                        <input type="text" placeholder="Search your trails. . .">
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-menu">
+                <span class="material-symbols-outlined">login logout</span>
+            </div>
+        </header>
+    </div>
+    <body>
+
+        <div class="contact-container">
+            <h1>Contact Us</h1>
+            <div class="contact-info">
+                <p>We'd love to hear from you! Please reach out to us using the form below or via the contact information provided.</p>
+                <p><strong>Address:</strong> 1301 16 Ave NW, Calgary, AB, Canada</p>
+                <p><strong>Phone:</strong> (403) 123-4567</p>
+                <p><strong>Email:</strong> inquiry@hc.com</p>
+            </div>
+    
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+    
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+    
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+    
+            <div id="google-map" style="width: 100%;height: 700px;"></div>
+        </div>
+    <div id="chatbot">
+        <div id="chatbot-header">    
+            <button id="increase-size">+</button>
+            Chatbot
+            <button id="decrease-size">-</button></div>
+        <div id="chatbot-messages" aria-live="polite"></div>
+        <textarea id="chatbot-input" placeholder="Enter your question..." aria-label="Enter your question"></textarea>
+        <button id="chatbot-send">Send</button>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section company-info">
+                    <h3>Hiker's Companion</h3>
+                    <p>1301 16 Ave NW, Calgary, AB, Canada</p>
+                    <p>Phone: (403) 123-4567</p>
+                    <p>Email: inquiry@hc.com</p>
+                </div>
+                <div class="footer-section social-media">
+                    <h3>Follow Us</h3>
+                    <a href="#"><img src="http://www.yyc2yvr.com/hc/images/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="http://www.yyc2yvr.com/hc/images/twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="http://www.yyc2yvr.com/hc/images/instagram.png" alt="Instagram"></a>
+                </div>
+                <div class="footer-section quick-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="trails.html">Trails</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section newsletter">
+                    <label>
+                        <h3>Newsletter</h3>
+                        <form>
+                            <input type="email" placeholder="Your email address">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </label>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Hiker's Companion. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="chatbot.js"></script>
+    <script src="map.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDuWd9cXiOCXX9qDM_N_221eWYVm9cn0RQ&callback=initMap"></script>
+</body>
+</html>
