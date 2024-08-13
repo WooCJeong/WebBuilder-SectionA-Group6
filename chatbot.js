@@ -9,7 +9,7 @@ document.getElementById('chatbot-send').onclick = function() {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            'Authorization': 'Bearer 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'
+            'Authorization': 'Bearer API Key'
         },
         body: JSON.stringify({
             model: 'gpt-4-turbo',
