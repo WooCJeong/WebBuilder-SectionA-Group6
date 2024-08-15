@@ -1,6 +1,6 @@
 document.getElementById('chatbot-send').onclick = function() {
-    var inputField = document.getElementById('chatbot-input');
-    var message = inputField.value;
+    let inputField = document.getElementById('chatbot-input');
+    let message = inputField.value;
     inputField.value = '';
 
     displayMessage(message, 'user');
@@ -27,8 +27,8 @@ document.getElementById('chatbot-send').onclick = function() {
 };
 
 function displayMessage(message, sender) {
-    var messagesContainer = document.getElementById('chatbot-messages');
-    var messageDiv = document.createElement('div');
+    let messagesContainer = document.getElementById('chatbot-messages');
+    let messageDiv = document.createElement('div');
     messageDiv.textContent = message;
     messageDiv.className = sender + '-message';
     messagesContainer.appendChild(messageDiv);
